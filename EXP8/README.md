@@ -1,68 +1,123 @@
-# EXP8 - Student Management REST API (Spring Boot)
+# 📘 EXP8 – Student CRUD REST Service (Spring Boot)
 
-This experiment contains a Spring Boot backend project for managing student records with full CRUD operations using MySQL and Spring Data JPA.
+This project demonstrates the development of a RESTful backend service using **Spring Boot** and **Hibernate (JPA)** to perform CRUD operations on student data stored in a MySQL database.
 
-## Project Location
+---
 
-The runnable project is inside the `try` folder.
+## 🧩 Overview
 
-## Tech Stack
+The application exposes a set of REST endpoints that allow interaction with student records. It supports full lifecycle operations including creation, retrieval, modification, and deletion of data.
 
-- Java 21
-- Spring Boot 4
-- Spring Web MVC
-- Spring Data JPA
-- MySQL
-- Maven Wrapper (`mvnw` / `mvnw.cmd`)
+---
 
-## Features
+## ⚙️ Technology Stack
 
-- Create a student
-- Read all students
-- Read student by ID
-- Update student details
-- Delete a student
+* Java (JDK 21)
+* Spring Boot Framework
+* Spring Web (REST APIs)
+* Spring Data JPA (Hibernate ORM)
+* MySQL Database
+* Maven (Build Tool)
 
-## API Base URL
+---
 
-`http://localhost:8080/api/students`
+## 📁 Directory Structure
 
-## Endpoints
-
-- `GET /api/students` - Get all students
-- `GET /api/students/{id}` - Get one student by ID
-- `POST /api/students` - Create a new student
-- `PUT /api/students/{id}` - Update an existing student
-- `DELETE /api/students/{id}` - Delete a student
-
-## Database Setup (MySQL)
-
-1. Create database:
-
-```sql
-CREATE DATABASE spring_hibernate_db;
+```
+try/
+ └── src/
+      └── main/
+           ├── java/
+           │     └── com.example.demo
+           │           ├── controller
+           │           ├── service
+           │           ├── repository
+           │           └── model
+           │
+           └── resources/
+                 └── application.properties
 ```
 
-2. Open `try/src/main/resources/application.properties` and set your MySQL username/password if needed.
+---
 
-## Run the Project
+## 🔗 Base Endpoint
 
-From the `try` folder:
+```
+http://localhost:8080/api/students
+```
 
-```bash
-# Windows
+---
+
+## 📡 Available API Routes
+
+| HTTP Method | Endpoint           | Purpose                      |
+| ----------- | ------------------ | ---------------------------- |
+| GET         | /api/students      | Retrieve all student records |
+| GET         | /api/students/{id} | Retrieve a specific student  |
+| POST        | /api/students      | Insert a new student         |
+| PUT         | /api/students/{id} | Modify existing student      |
+| DELETE      | /api/students/{id} | Remove student record        |
+
+---
+
+## 🗄️ Database Setup
+
+1. Create a MySQL database:
+
+```sql
+CREATE DATABASE student_management;
+```
+
+2. Configure credentials in:
+
+```
+src/main/resources/application.properties
+```
+
+---
+
+## ▶️ Running the Application
+
+Navigate to the `try` directory and execute:
+
+### Windows
+
+```
 mvnw.cmd spring-boot:run
+```
 
-# macOS/Linux
+### macOS/Linux
+
+```
 ./mvnw spring-boot:run
 ```
 
-The app runs on:
+The server will start on:
 
-`http://localhost:8080`
+```
+http://localhost:8080
+```
 
-## Screenshots
+---
 
-### Screenshot 1 (image)
+## 🔄 Working Mechanism
 
-![Screenshot 1](./try/image.png)
+* Incoming HTTP requests are handled by **Controller classes**
+* Business logic is processed in the **Service layer**
+* Data persistence is managed via **Repository interfaces**
+* Hibernate maps Java objects to database tables
+
+---
+
+## 🎯 Learning Highlights
+
+* Building REST APIs with Spring Boot
+* Integrating Hibernate for ORM
+* Performing CRUD operations
+* Structuring backend applications using layered architecture
+
+---
+
+## 👤 Developed By
+
+Riyan Imtiyaz
