@@ -66,7 +66,3 @@ The app runs on:
 ### Screenshot 1 (image)
 
 ![Screenshot 1](./try/image.png)
-
-### Screenshot 2 (image2)
-
-![Screenshot 2](./try/image2.png)
