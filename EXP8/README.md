@@ -108,6 +108,10 @@ http://localhost:8080
 * Hibernate maps Java objects to database tables
 
 ---
+<img width="1233" height="403" alt="Screenshot 2026-03-23 201344" src="https://github.com/user-attachments/assets/686c0e96-990b-429c-b272-6cd40e1322b1" /><br>
+
+
+<img width="1236" height="416" alt="Screenshot 2026-03-23 201332" src="https://github.com/user-attachments/assets/06016ac5-dd79-48c5-b6d7-6f1250374209" />
 
 ## 🎯 Learning Highlights
 
@@ -117,6 +121,9 @@ http://localhost:8080
 * Structuring backend applications using layered architecture
 
 ---
+
+
+
 
 ## 👤 Developed By
 
